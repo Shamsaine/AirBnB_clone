@@ -1,0 +1,1 @@
+# class for the creation of places
