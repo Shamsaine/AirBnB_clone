@@ -1,4 +1,4 @@
-# class for the creation of states 
+#!/usr/bin/python3
 from models.base_model import BaseModel
 
 class State(BaseModel):

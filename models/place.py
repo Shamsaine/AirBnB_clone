@@ -1,4 +1,5 @@
-# class for the creation of places
+#!/usr/bin/python3
+
 from models.base_model import BaseModel
 
 class Place(BaseModel):
