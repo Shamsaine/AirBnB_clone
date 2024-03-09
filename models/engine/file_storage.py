@@ -1,6 +1,9 @@
 # class that controls the storage of objects in files
 import json
 
+from models.user import User
+from models.base_model import BaseModel
+
 class FileStorage:
     __file_path = "file.json"
     __objects = {}
