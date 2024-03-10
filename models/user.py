@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # class for the creation of users
 from models.base_model import BaseModel
 

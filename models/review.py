@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # class for handling reviewsfrom models.base_model import BaseModel
 
 class Review(BaseModel):
