@@ -2,7 +2,7 @@
 # contain the base class which is the parent class for all the other classes
 import uuid
 from datetime import datetime
-from models import storage
+#from models import storage
 
 class BaseModel:
     def __init__(self, *args, **kwargs):
