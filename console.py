@@ -40,7 +40,7 @@ class HBNBCommand(cmd.Cmd):
             return
 
         args = arg.split()
-        if args[0] not in storage.classes():
+        if args[0] not in storage.class():
             print("** class doesn't exist **")
             return
 
