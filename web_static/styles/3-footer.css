@@ -6,4 +6,8 @@ footer {
     text-align: center;
     position: fixed;
     bottom: 0px;
+
+    border: 4px solid black;
+    margin: 4px;
+    padding: 4px;
 }
