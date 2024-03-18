@@ -38,7 +38,7 @@ button {
 }
 
 .locations {
-    display: inline-block;
+    display: inline;
     vertical-align: middle;
 
     height: 100%;
@@ -61,11 +61,22 @@ button {
 }
 
 .filters {
+    display: block;
     color: black;
     height: 70px;
     width: 100%;
     border: 1px solid #DDDDDD;
     border-radius: 4PX;
+}
+
+.filter_amenities {
+	display: inline;
+	vertical-align: middle;
+	height: 100%;
+	float: left;
+    width: 25%;
+
+	line-height: 20px;
 }
 
 .popover {
