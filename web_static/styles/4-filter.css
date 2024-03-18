@@ -1,0 +1,16 @@
+.filters {
+    color: white;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4PX;
+}
+
+.filter button {
+    font-size: 18px;
+    background-color: #ff5a5f;
+    color: #ffffff;
+    width: 20%;
+    border: 0px;
+    border-radius: 4px;
+}
