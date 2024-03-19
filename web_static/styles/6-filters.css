@@ -22,6 +22,10 @@ ul {
 	padding-bottom: 20px;
 }
 
+li {
+    margin: 2px;
+    padding: 2px;
+}
 button {
     font-size: 18px;
     color: #ffffff;
@@ -39,7 +43,7 @@ button {
 }
 
 .locations {
-    display: inline;
+    display: inline-block;
     vertical-align: middle;
 
     height: 100%;
@@ -70,7 +74,7 @@ button {
     border-radius: 4PX;
 }
 
-.filter_amenities {
+.amenities {
 	display: inline;
 	vertical-align: middle;
 	height: 100%;
@@ -101,6 +105,6 @@ button:hover {
 	display: inline-block;
 }
 
-.filter_amenities:hover .popover {
+.amenities:hover .popover {
 	display: inline-block;
 }
