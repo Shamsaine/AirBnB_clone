@@ -47,7 +47,7 @@ class BaseModel:
                             )
                     except ValueError:
                         raise ValueError(
-                            "Invalid datetime format for {}. Expected ISO format.".format(key)
+                            "Invalid format for {}. Expected ISO format.".format(key)
                             )
                     setattr(self, key, value)
                 else:
