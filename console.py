@@ -1,10 +1,18 @@
 #!/usr/bin/python3
+"""
+HBNBCommand module containing the HBNBCommand class
+"""
 
 import cmd
-from models.base_model import BaseModel
 from models import storage
 
+
 class HBNBCommand(cmd.Cmd):
+    """Command-line interpreter for managing AirBnB objects
+    
+    Attributes:
+        prompt (str): The prompt shown when awaiting input.
+    """
     prompt = "(hbnb) "
 
     def do_quit(self, arg):
@@ -21,7 +29,7 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, arg):
-        """Creates a new instance of BaseModel or User, saves it, and prints the id"""
+        """Creates a new instance of a specified class, saves it, and prints its id"""
         if not arg:
             print("** class name missing **")
             return
@@ -40,7 +48,7 @@ class HBNBCommand(cmd.Cmd):
             return
 
         args = arg.split()
-        if args[0] not in storage.class():
+        if args[0] not in storage.classes():
             print("** class doesn't exist **")
             return
 
@@ -79,7 +87,7 @@ class HBNBCommand(cmd.Cmd):
         storage.save()
 
     def do_all(self, arg):
-        """Prints all string representation of all instances"""
+        """Prints string representations of all instances or of instances of a specific class"""
         args = arg.split()
         objects = storage.all()
 
