@@ -10,7 +10,6 @@ from models.base_model import BaseModel
 
 class HBNBCommand(cmd.Cmd):
     """Command-line interpreter for managing AirBnB objects
-    
     Attributes:
         prompt (str): The prompt shown when awaiting input.
     """
@@ -30,7 +29,8 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, arg):
-        """Creates a new instance of a specified class, saves it, and prints its id"""
+        """Creates a new instance of a specified class,
+        saves it, and prints its id"""
         if not arg:
             print("** class name missing **")
             return
@@ -88,7 +88,8 @@ class HBNBCommand(cmd.Cmd):
         storage.save()
 
     def do_all(self, arg):
-        """Prints string representations of all instances or of instances of a specific class"""
+        """Prints string representations of all instances or
+        of instances of a specific class"""
         args = arg.split()
         objects = storage.all()
 
@@ -100,7 +101,8 @@ class HBNBCommand(cmd.Cmd):
             print([str(obj) for key, obj in objects.items() if args[0] in key])
 
     def do_update(self, arg):
-        """Updates an instance based on the class name and id by adding or updating attribute"""
+        """Updates an instance based on the class name
+        and id by adding or updating attribute"""
         args = arg.split()
         if len(args) == 0:
             print("** class name missing **")
