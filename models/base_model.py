@@ -42,9 +42,13 @@ class BaseModel:
             for key, value in kwargs.items():
                 if key in ("created_at", "updated_at"):
                     try:
-                        value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
+                        value = datetime.strptime(
+                            value, "%Y-%m-%dT%H:%M:%S.%f"
+                            )
                     except ValueError:
-                        raise ValueError("Invalid datetime format for {}. Expected ISO format.".format(key))
+                        raise ValueError(
+                            "Invalid datetime format for {}. Expected ISO format.".format(key)
+                            )
                     setattr(self, key, value)
                 else:
                     setattr(self, key, value)
