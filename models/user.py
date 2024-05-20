@@ -8,7 +8,6 @@ from models.base_model import BaseModel
 
 class User(BaseModel):
     """User class that inherits from BaseModel
-    
     Attributes:
         email (str): The email address of the user.
         password (str): The password of the user.

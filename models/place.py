@@ -8,7 +8,6 @@ from models.base_model import BaseModel
 
 class Place(BaseModel):
     """Place class that inherits from BaseModel
-    
     Attributes:
         city_id (str): The ID of the city the place is located in.
         user_id (str): The ID of the user who owns the place.
@@ -20,7 +19,8 @@ class Place(BaseModel):
         price_by_night (int): The price per night to stay at the place.
         latitude (float): The latitude of the place's location.
         longitude (float): The longitude of the place's location.
-        amenity_ids (list): A list of IDs representing the amenities available at the place.
+        amenity_ids (list): A list of IDs representing the amenities
+        available at the place.
     """
     city_id = ""
     user_id = ""
