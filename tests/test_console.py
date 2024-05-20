@@ -8,6 +8,7 @@ from tests.mock_storage import MockStorage
 
 class TestHBNBCommand(unittest.TestCase):
 
+
     def setUp(self):
         self.console = HBNBCommand()
         self.console.storage = MockStorage()
@@ -209,10 +210,13 @@ class TestHBNBCommand(unittest.TestCase):
         instance = BaseModel()
         self.console.storage.new(instance)
         with patch('sys.stdout', new=StringIO()) as f:
-            self.console.onecmd(f"update BaseModel {instance.id} name 'New Name'")
+            self.console.onecmd(
+                f"update BaseModel {instance.id} name 'New Name'"
+                )
         output = f.getvalue().strip()
         self.assertEqual(output, "")
         self.assertEqual(instance.name, 'New Name')
+
 
 if __name__ == '__main__':
     unittest.main()
