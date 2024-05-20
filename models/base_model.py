@@ -12,7 +12,8 @@ from datetime import datetime
 
 class BaseModel:
     """
-    The BaseModel class serves as the foundation for all models in the application.
+    The BaseModel class serves as the foundation
+    for all models in the application.
     It defines common attributes (id, created_at, updated_at) and methods.
 
     Attributes:
@@ -24,14 +25,17 @@ class BaseModel:
 
     def __init__(self, *args: object, **kwargs: dict) -> None:
         """
-        Initializes the base model with attributes from a dictionary (if provided).
+        Initializes the base model with attributes
+        from a dictionary (if provided).
 
         Args:
             *args (object, optional): Unused arguments. Defaults to object.
-            **kwargs (dict, optional): Dictionary containing attributes for the model. Defaults to dict.
+            **kwargs (dict, optional): Dictionary containing attributes
+            for the model. Defaults to dict.
 
         Raises:
-            ValueError: If 'created_at' or 'updated_at' is present in kwargs but not a valid ISO format string.
+            ValueError: If 'created_at' or 'updated_at' is present in kwargs
+            but not a valid ISO format string.
         """
 
         if kwargs:
