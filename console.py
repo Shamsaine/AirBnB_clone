@@ -8,8 +8,7 @@ from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
-    """Command-line interpreter for managing AirBnB objects
-    
+    """Command-line interpreter for managing AirBnB objects    
     Attributes:
         prompt (str): The prompt shown when awaiting input.
     """
@@ -29,7 +28,8 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, arg):
-        """Creates a new instance of a specified class, saves it, and prints its id"""
+        """Creates a new instance of a specified class, saves it,
+        and prints its id"""
         if not arg:
             print("** class name missing **")
             return
@@ -87,7 +87,8 @@ class HBNBCommand(cmd.Cmd):
         storage.save()
 
     def do_all(self, arg):
-        """Prints string representations of all instances or of instances of a specific class"""
+        """Prints string representations of all instances or
+        of instances of a specific class"""
         args = arg.split()
         objects = storage.all()
 
@@ -136,6 +137,7 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
         else:
             print("** attribute doesn't exist **")
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
