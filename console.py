@@ -9,7 +9,8 @@ from models.base_model import BaseModel
 
 
 class HBNBCommand(cmd.Cmd):
-    """Command-line interpreter for managing AirBnB objects
+    """
+    Command-line interpreter for managing AirBnB objects
     Attributes:
         prompt (str): The prompt shown when awaiting input.
     """
